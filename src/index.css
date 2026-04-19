@@ -1,0 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+  --color-primary:hsl(200,15%,8%);
+  --color-main:hsl(0,0%,98%);
+  --color-element:hsl(0,0%,100%); 
+  --color-input:hsl(0,0%,52%);
+  --text-body:18px;
+  --font-nunito:'Nunito Sans', sans-serif; 
+}
+@utility container{
+  margin-inline:auto;
+  width:85%
+}
+body{
+  @apply:bg-main text-primary font-nunito --text-body
+}
